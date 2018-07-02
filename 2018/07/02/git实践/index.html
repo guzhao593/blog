@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <title>guzhao&#39;s blog</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/tomorrow-night.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    <header>
+    <span class="banner"><a href="/">guzhao&#39;s blog</a></span>
+    <span class="menu">Menu</span>
+    <ul class="menu_list hide">
+        
+            <li><a href="/" >Home</a></li>
+        
+            <li><a href="/archives" >Archives</a></li>
+        
+            <li><a href="/tags" >Tags</a></li>
+        
+            <li><a href="/links" >Links</a></li>
+        
+            <li><a href="/about" >About</a></li>
+        
+    </ul>
+</header>
+    <div class="main">
+        
+    <article>
+    <h1 class='post-title'>
+        <span></span>
+    </h1>
+    <section class='post-content'>
+        
+            
+        
+        <ol>
+<li><p><strong>如何将已暂存的文件撤回</strong></p>
+<ol>
+<li><p>使用命令<code>git status</code>，查询当前暂存区有哪些文件，如图<img src="https://i.imgur.com/MA9KDAN.png" alt=""></p>
+</li>
+<li><p>再使用命令<code>git reset HEAD &lt;file&gt;</code>，就可以撤回你的文件了。如图<img src="https://i.imgur.com/4wb4B2d.png" alt=""></p>
+</li>
+<li><p>如果你要全部撤回，直接使用命令<code>git reset HEAD</code>就行了.</p>
+</li>
+</ol>
+</li>
+<li><p><strong>如何将撤销文件的修改</strong></p>
+</li>
+</ol>
+<blockquote>
+<p>撤销文件的修改其实有很多方法，可以使用编辑器的撤销快捷键。但当你关闭编辑器后，你会发现你用不了撤销了。还有一种情况是你修改了n个文件时，你想批量撤销修改时，你发现如果是快捷键的方式是多么的繁锁。这时最后的方式就是使用git命令不解决了。</p>
+</blockquote>
+<ul>
+<li><ol>
+<li><p>使用命令<code>git status</code>， 查询工作区有哪些修改过的文件，如图<img src="https://i.imgur.com/bdmlM42.png" alt=""></p>
+</li>
+<li><p>再使用命令<code>git checkout -- &lt;file&gt;</code>，就可以撤销指定文件的修改，如图<img src="https://i.imgur.com/aPiVqC2.png" alt=""></p>
+</li>
+<li><p>如果要撤销所有，使用命令<code>git checkout .</code>。</p>
+</li>
+</ol>
+</li>
+</ul>
+
+    </section>
+    
+        <section id="comments">
+        
+        </section>
+    
+</article>
+
+    </div>
+    <footer>
+    <div class="info"><span>Powered By <a href="https://hexo.io/" target="blank">Hexo</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span>Theme by <a href="https://github.com/showonne/hexo_showonne" target="blank">Showonne</a></span></div>
+</footer>
+    <script src="/js/index.js"></script>
+</body>
+</html>
