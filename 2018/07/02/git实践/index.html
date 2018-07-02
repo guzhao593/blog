@@ -1,42 +1,86 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-    <title>guzhao&#39;s blog</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/tomorrow-night.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+  <meta charset="utf-8">
+  
+
+  
+  <title>guzhao&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="如何将已暂存的文件撤回  使用命令git status，查询当前暂存区有哪些文件，如图  再使用命令git reset HEAD &amp;lt;file&amp;gt;，就可以撤回你的文件了。如图  如果你要全部撤回，直接使用命令git reset HEAD就行了.    如何将撤销文件的修改    撤销文件的修改其实有很多方法，可以使用编辑器的撤销快捷键。但当你关闭编辑器后，你会发现你用不了撤销了。还有一种">
+<meta property="og:type" content="article">
+<meta property="og:title" content="guzhao&#39;s blog">
+<meta property="og:url" content="http://yoursite.com/2018/07/02/git实践/index.html">
+<meta property="og:site_name" content="guzhao&#39;s blog">
+<meta property="og:description" content="如何将已暂存的文件撤回  使用命令git status，查询当前暂存区有哪些文件，如图  再使用命令git reset HEAD &amp;lt;file&amp;gt;，就可以撤回你的文件了。如图  如果你要全部撤回，直接使用命令git reset HEAD就行了.    如何将撤销文件的修改    撤销文件的修改其实有很多方法，可以使用编辑器的撤销快捷键。但当你关闭编辑器后，你会发现你用不了撤销了。还有一种">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://i.imgur.com/MA9KDAN.png">
+<meta property="og:image" content="https://i.imgur.com/4wb4B2d.png">
+<meta property="og:image" content="https://i.imgur.com/bdmlM42.png">
+<meta property="og:image" content="https://i.imgur.com/aPiVqC2.png">
+<meta property="og:updated_time" content="2018-07-02T13:15:49.133Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="guzhao&#39;s blog">
+<meta name="twitter:description" content="如何将已暂存的文件撤回  使用命令git status，查询当前暂存区有哪些文件，如图  再使用命令git reset HEAD &amp;lt;file&amp;gt;，就可以撤回你的文件了。如图  如果你要全部撤回，直接使用命令git reset HEAD就行了.    如何将撤销文件的修改    撤销文件的修改其实有很多方法，可以使用编辑器的撤销快捷键。但当你关闭编辑器后，你会发现你用不了撤销了。还有一种">
+<meta name="twitter:image" content="https://i.imgur.com/MA9KDAN.png">
+  
+    <link rel="alternate" href="/atom.xml" title="guzhao&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-    <header>
-    <span class="banner"><a href="/">guzhao&#39;s blog</a></span>
-    <span class="menu">Menu</span>
-    <ul class="menu_list hide">
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">guzhao&#39;s blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
         
-            <li><a href="/" >Home</a></li>
+          <a class="main-nav-link" href="/">Home</a>
         
-            <li><a href="/archives" >Archives</a></li>
+          <a class="main-nav-link" href="/archives">Archives</a>
         
-            <li><a href="/tags" >Tags</a></li>
+      </nav>
+      <nav id="sub-nav">
         
-            <li><a href="/links" >Links</a></li>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-            <li><a href="/about" >About</a></li>
-        
-    </ul>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
 </header>
-    <div class="main">
-        
-    <article>
-    <h1 class='post-title'>
-        <span></span>
-    </h1>
-    <section class='post-content'>
-        
-            
-        
+      <div class="outer">
+        <section id="main"><article id="post-git实践" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/02/git实践/" class="article-date">
+  <time datetime="2018-07-02T13:15:49.099Z" itemprop="datePublished">2018-07-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
         <ol>
 <li><p><strong>如何将已暂存的文件撤回</strong></p>
 <ol>
@@ -66,18 +110,116 @@
 </li>
 </ul>
 
-    </section>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/02/git实践/" data-id="cjj4aneel0001uotnlyirdjiq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
     
-        <section id="comments">
+<nav id="article-nav">
+  
+    <a href="/2018/07/02/Node类型/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
-        </section>
-    
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/06/30/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
 </article>
 
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li></ul>
     </div>
-    <footer>
-    <div class="info"><span>Powered By <a href="https://hexo.io/" target="blank">Hexo</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span>Theme by <a href="https://github.com/showonne/hexo_showonne" target="blank">Showonne</a></span></div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/07/02/Node类型/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/02/git实践/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/06/30/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 guzhao<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
 </footer>
-    <script src="/js/index.js"></script>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
 </body>
 </html>
